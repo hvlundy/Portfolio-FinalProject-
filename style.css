@@ -1,0 +1,382 @@
+/*Lundy Portfolio*/
+/*WEB.210.0001*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Utility*/
+
+body {
+    background-color: #424244;
+}
+
+li, a {
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+header .logo .nav-links {
+    position: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    font-family: Italiana, sans-serif;
+    font-size: 30px;
+}
+
+.logo h2, a {
+    cursor: pointer;
+    color: white;
+}
+
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    font-family: Titillium, Roboto, sans-serif;
+    font-size: 16px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    transition: all 0.3s ease 0s;
+    color: #ff9001;
+}
+
+.logo h2, a:hover {
+    transition: all 0.3s ease 0s;
+    color: #ff9001;
+}
+
+   
+
+/* showcase start */
+
+.showcase {
+    font-family: Titillium, Roboto, sans-serif;
+    background: #f4f4f4;
+    height: 600px;
+}
+
+.showcase .container {
+    display: flex;
+    margin: 20px;
+}
+
+.showcase .content {
+    padding-top: 180px;
+    margin: auto;
+    width: 600px;
+    line-height: 1.6em;
+   
+}
+
+.qcontainer {
+    max-width: 350px;
+    padding-top: 35px;
+    font-style: italic;
+}
+.showcase .image {
+    justify-content: flex-end;
+    margin-top: 80px;
+    margin-right: 200px;
+}
+
+.showcase .content h2 {
+    color: #424244;
+}
+
+.showcase .content span {
+    color: #ff9001;
+    font-size: 42px;
+    line-height: 1.2em;
+}
+/* Showcase end*/
+
+/*about*/
+
+#about .container {
+    display: flex;
+}
+
+.btn {
+    padding: 9px 25px;
+    background-color: #ff9001;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    margin: auto;
+    color: black;
+    font-family: Titillium, Roboto, sans-serif;
+
+}
+
+.about-content .btn:hover{
+    transition: all 0.3s ease 0s;
+    color: #424244;
+}
+
+.img-about img {
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.img-about {
+    justify-content: flex-end;
+    margin-left: 300px;
+
+}
+
+#about {
+    margin-top: 90px;
+}
+
+.about-content {
+    margin: auto;
+    max-width: 500px;
+}
+
+#about h2 {
+    padding: 5px;
+    color: #f4f4f4;;
+}
+
+#about p {
+    color: #f4f4f4;;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    font-family: Titillium, Roboto, sans-serif;
+
+}
+
+#about h3 {
+    color: #f4f4f4;;
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+/*Social buttons*/
+
+.social-btn ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px 30px 10px;
+}
+
+.social-btn ul li a:hover {
+
+}
+/*About Section End*/
+
+/* Services*/
+
+/*#services {
+    display: flex;
+}
+*/
+#services {
+    margin-top: 150px;
+    text-align: center;
+}
+
+#services h2 {
+    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center;   
+    color: #f4f4f4;
+}
+
+#services .lead {
+    color: #f4f4f4;
+    font-family:  Titillium, Roboto, sans-serif;
+}
+
+#services .cards h3 {
+    color: #424244;
+}
+
+#services .cardscontainer {
+    display: flex;
+    flex-direction: row;
+    margin: 2em;
+    justify-content: center;
+}
+
+.cards {
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 05px;
+    background-color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.cards h3 {
+    color: black;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+}
+
+.cards p {
+    margin: auto;
+    line-height: 1.6em;
+    text-align: justify;
+    margin-bottom: 30px;
+    font-family: Titillium, Roboto, sans-serif;
+}
+
+.cards .btn {
+    font-family: Titillium, Roboto, sans-serif;
+}
+
+/* Services end*/
+
+
+
+/* Portfolio page--------------------*/
+
+/* Image grid*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: 200px;
+    margin-left: 80px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+   
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  .column .bottomimg {
+    margin-top: 10px;
+  }
+
+  .column .leftbottom {
+    padding: 10px;
+  }
+
+  .column .columnbottom {
+    margin-top: 80px;
+  }
+
+  .column .topimg {
+    padding: 10px;
+  }
+
+  .column .logoimg {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Footer */
+
+  
+  footer {
+    display: block;
+  }
+
+  footer {
+    padding-top: 10px;
+    text-align: center;
+    padding: 3px;
+    background-color: white;
+    color: #424244;
+  }
+
+  phone {
+    padding-bottom: 10px;
+  }
+
+  /*MEDIA QUERIES */
+
+  @media screen and (max-width: 700px){
+
+
+    .showcase p, img {
+        width: 100%;
+    }
+
+    .showcase .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .showcase {
+        width: auto;
+    }
+
+    /* ABOUT */
+
+    #about .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #about .img-about {
+        width: 50%;
+    }
+
+    .about-content {
+        padding-left: 1.5em;
+    }
+
+    #portfolio .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #portfolio .imageIG {
+        width: 75%;
+    }
+
+    /*cards */
+
+    #services .cardscontainer .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #services .cards {
+        width: 100%;
+    }
+}
+  
